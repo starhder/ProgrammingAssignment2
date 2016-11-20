@@ -1,8 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## A set of functions to implement inverse-cachable matrix.
 
-## Write a short comment describing this function
-
+## Makes a matrix which can store its inverse as a cache.
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
@@ -18,8 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Gets the inverse of the matrix, get from cache if cached.
 cacheSolve <- function(x, ...) {
   i <- x$getInverse()
   if(!is.null(i)) {
